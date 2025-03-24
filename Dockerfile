@@ -23,6 +23,6 @@ RUN chmod -R 777 storage bootstrap/cache
 
 # Добавляем наш entrypoint.sh в контейнер
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+RUN chmod 755 /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
